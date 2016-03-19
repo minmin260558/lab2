@@ -1,0 +1,4 @@
+for Question.A:
+	g++ -o A A.cpp
+for Question.B:
+	make
