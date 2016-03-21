@@ -1,27 +1,27 @@
 #include "a.h"
 
-BMI::BMI(float a,float b){
-	setBMI(a,b);
+Bmi::Bmi(float a,float b){
+	setBmi(a,b);
 	}
 
-void BMI::setBMI(float a,float b){
+void Bmi::setBmi(float a,float b){
 	bmi = 0;
 	height = a;
 	mass = b;	
 
 	}
 
-void BMI::getBMI(){
+void Bmi::getBmi(){
          bmi =(int) ((mass/(height*height))*100.0+0.5)/100.0;
 
                 }
 
-float BMI::returnBMI(){
+float Bmi::returnBmi(){
          return bmi;
 
                 }
 
-string BMI::getCategory(){
+string Bmi::getCategory(){
  		        if(bmi<15)
                 	        return "Very severely underweight";
                         else if(bmi<16||bmi==15)

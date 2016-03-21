@@ -1,11 +1,11 @@
 #include<string>
 using namespace std;
-class BMI {
+class Bmi {
 public:
-	BMI(float a,float b);
-	void setBMI(float a,float b);
-	void getBMI();
-	float returnBMI();
+	Bmi(float a,float b);
+	void setBmi(float a,float b);
+	void getBmi();
+	float returnBmi();
 	string getCategory();
 private:
 	float height;

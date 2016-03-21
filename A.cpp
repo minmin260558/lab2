@@ -4,24 +4,24 @@
 #include<cstdlib>
 using namespace std;
 
-class BMI{
+class Bmi{
 	
 	public:
-		BMI(float a,float b){
-			setBMI(a,b);
+		Bmi(float a,float b){
+			setBmi(a,b);
    		 }
 		
-		void setBMI(float a,float b){
+		void setBmi(float a,float b){
    			bmi=0;
 			height = a;
 			mass = b;
 	
 		}
-		void getBMI(){
+		void getBmi(){
 			bmi =(int) ((mass/(height*height))*100.0+0.5)/100.0;	
 			
 		}
-		float returnBMI(){
+		float returnBmi(){
 			return bmi;
 
 		}
@@ -75,9 +75,9 @@ int main(){
 			break;
 		else{
 			a=a/100;
-			BMI bmi1(a,b);
-			bmi1.getBMI();
-			outFile<<bmi1.returnBMI()<<"\t"<<bmi1.getCategory()<<endl;
+			Bmi bmi1(a,b);
+			bmi1.getBmi();
+			outFile<<bmi1.returnBmi()<<"\t"<<bmi1.getCategory()<<endl;
 			
 		
 		}

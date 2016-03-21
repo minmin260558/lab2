@@ -22,9 +22,9 @@ int main(){
                         break;
                 else{
                         a=a/100;
-                        BMI bmi1(a,b);
-                        bmi1.getBMI();
-                        outFile<<bmi1.returnBMI()<<"\t"<<bmi1.getCategory()<<endl;
+                        Bmi bmi1(a,b);
+                        bmi1.getBmi();
+                        outFile<<bmi1.returnBmi()<<"\t"<<bmi1.getCategory()<<endl;
 
 
                 }
