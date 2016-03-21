@@ -8,18 +8,25 @@ class Bmi{
 	
 	public:
 		Bmi(float a,float b){
-			setBmi(a,b);
+			setHeight(a);
+			setMass(b);
    		 }
 		
-		void setBmi(float a,float b){
-   			bmi=0;
+		void setHeight(float a){
 			height = a;
-			mass = b;
-	
+		}
+		void setMass(float b){
+			mass = b;	
 		}
 		void getBmi(){
 			bmi =(int) ((mass/(height*height))*100.0+0.5)/100.0;	
 			
+		}
+		float getHeight(){
+			return height;
+		}
+		float getMass(){
+			return mass;
 		}
 		float returnBmi(){
 			return bmi;

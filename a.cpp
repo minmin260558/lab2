@@ -1,21 +1,31 @@
 #include "a.h"
 
 Bmi::Bmi(float a,float b){
-	setBmi(a,b);
+	setHeight(a);
+	setMass(b);
 	}
 
-void Bmi::setBmi(float a,float b){
-	bmi = 0;
+void Bmi::setHeight(float a){
 	height = a;
-	mass = b;	
 
+	}
+void Bmi::setMass(float b){
+	mass = b;
+	
 	}
 
 void Bmi::getBmi(){
-         bmi =(int) ((mass/(height*height))*100.0+0.5)/100.0;
+    bmi =(int) ((mass/(height*height))*100.0+0.5)/100.0;
 
-                }
+    }
 
+float Bmi::getHeight(){
+	return height;
+
+	}
+float Bmi::getMass(){
+	return mass;
+	}
 float Bmi::returnBmi(){
          return bmi;
 
